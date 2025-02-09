@@ -82,12 +82,16 @@ function operate(){
         }
         if(divi){
             num2 = parseFloat(document.getElementById("result").value);
-            if(!isNaN(num1/num2)){
-                document.getElementById("result").value = (num1 / num2);
+            if(num2 != 0){
+               if(!isNaN(num1/num2)){
+                   document.getElementById("result").value = (num1 / num2);
+               } else {
+                   document.getElementById("result").value = "Error";
+               }
+               showsres = true;
             } else {
-                document.getElementById("result").value = "Error";
+               document.getElementById("result").value = "Burro";
             }
-            showsres = true;
         }
     }
 }
