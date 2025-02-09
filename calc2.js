@@ -86,7 +86,7 @@ function operate(){
                if(!isNaN(num1/num2)){
                    document.getElementById("result").value = (num1 / num2);
                } else {
-                   document.getElementById("result").value = "Error";
+                   document.getElementById("result").value = "Eror";
                }
                showsres = true;
             } else {
